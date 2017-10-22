@@ -24,3 +24,33 @@ freeStyleJob('myFree3') {
   
   
 }
+
+pipelineJob('test_pipeline'){
+  
+  definition{
+    
+    cpsScm{
+      
+      scm{
+        
+        git{
+          
+          remote{
+            
+           url('https://github.com/sumeshkanayi/myrepo.git') 
+          }
+        }
+        
+      }
+      
+      
+    }
+    
+    
+    
+  }
+  
+  
+  
+  
+}
