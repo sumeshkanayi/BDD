@@ -5,6 +5,17 @@ freeStyleJob('myFree') {
 }
 freeStyleJob('myFree2') {
   description("myjob2")
+  scm{
+    git{
+      
+      remote{
+       
+        url('https://github.com/sumeshkanayi/BDD.git')
+        
+      }
+      
+    }
+  }
   
   
 }
